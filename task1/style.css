@@ -39,3 +39,70 @@ ul > li img {
 }
 
 /* Вашият CSS от тук надолу */
+
+@media (max-width: 399px) {
+    ul {
+        background-color: blue;
+        display: flex;
+        display: -webkit-flex;
+        flex-direction: column;
+         -webkit-flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+}
+
+
+@media (min-width: 400px) and (max-width: 599px){
+    body {
+        background-color: lightblue;
+    }
+
+}
+
+
+
+@media (min-width: 600px) and (max-width: 999px) {
+    body {
+        background-color: cyan;
+    }
+
+}
+
+
+
+@media (min-width: 1000px) {
+    body {
+        background-color: orange;
+    }
+}
+/* 1 b   */
+ul li:nth-child(even) img {
+    background-color: blue;
+}
+
+/* 1b end */
+
+/*1c start */
+img {
+    transition: all 2s;
+}
+
+img:hover {
+    cursor: crosshair;
+    transform: rotate(270deg);
+    background-color: lightblue;
+}
+
+ul li:nth-child(even) img:hover {
+    background-color: lightblue;
+}
+/*1c end */
+
+/*1d start */
+
+li::after {
+    content: "";
+    position: absolute;
+}
